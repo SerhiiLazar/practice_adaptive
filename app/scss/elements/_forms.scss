@@ -1,0 +1,64 @@
+$global-main-color: #2b343c;
+
+.custom-radio {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+
+  .text {
+    font-size: 14px;
+    color: #51656c;
+  }
+
+  input {
+    visibility: hidden;
+    opacity: 0;
+    width: 0 !important;
+    height: 0 !important;
+    margin-left: 0;
+    border: none;
+  }
+
+
+  input:checked {
+    .checkmark,
+    & ~ .checkmark {
+      &:after {
+        transform: translate(-50%,-50%) scale(1);
+      }
+    }
+  }
+
+  .checkmark {
+    &:before,
+    &:after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translate(-50%,-50%);
+      border: 1px solid #51656c;
+      border-radius: 50%;
+      transition: 0.2s ease-in;
+    }
+    &:before {
+      width: 16px;
+      height: 16px;
+      border-color: #51656c;
+    }
+
+    &:after {
+      width: 8px;
+      height: 8px;
+      background-color: #7f3e9a;
+      transform: translate(-50%,-50%) scale(0);
+    }
+
+
+  }
+
+
+
+}

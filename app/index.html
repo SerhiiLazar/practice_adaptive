@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>OptimizedHTML 5</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dest/preview.jpg">
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+
+
+<div class="burger-mobile">
+	<div class="burger-mobile-box">
+		<div class="burger-mobile-line"></div>
+	</div>
+</div>
+
+
+<input type="tel">
+
+<label class="custom-radio" for="order-form-delivery_type-newmail"><span class="text">Служба доставки</span>
+	<input name="delivery_type" type="checkbox" value="newmail" data-value="newmail" id="order-form-delivery_type-newmail" checked="checked" class="valid">
+	<span class="checkmark"></span>
+</label>
+
+	<a href="#" class="banner__link link link__code" data-micromodal-trigger="register-code"><span
+			class="text">Реєструй код</span> <span class="arrow"><i
+			class="ic ic-right-arrow"> </i></span></a>
+
+
+	<div class="modal-container">
+
+		<div class="modal micromodal-slide" id="register-code" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				<div class="modal__container form-modal" role="dialog" aria-modal="true"
+					 aria-labelledby="modal-1-title">
+					<header class="modal__header">
+						<h2 class="modal__title">
+							Реєстрація коду
+						</h2>
+						<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+					</header>
+					<div class="modal__content modal__content">
+						<form action="" class="form-code">
+							<label for="name" class="form-modal__label">
+								<input type="text" id="name" name="name" class=" form-modal__control"
+									   data-error-text="Введіть ваше ім'я" placeholder="Ім'я">
+							</label>
+							<div class="form-modal__hints-error form-modal__hints-error_name"></div>
+							<label for="surname" class="form-modal__label">
+								<input type="text" id="surname" name="surname" class=" form-modal__control"
+									   data-error-text='Введіть ваше прізвище' placeholder="Прізвище">
+							</label>
+							<div class="form-modal__hints-error form-modal__hints-error_surname"></div>
+							<label for="phone" class="form-modal__label">
+								<input type="tel" id="phone" name="phone" class=" form-modal__control"
+									   data-error-text='Введіть ваш телефон'>
+							</label>
+							<div class="form-modal__hints-error form-modal__hints-error_phone"></div>
+							<label for="code" class="form-modal__label">
+								<input type="text" id="code" name="code" placeholder="XXXX-XXXX-XXXX-XXXX" class=" form-modal__control"
+									   data-error-text='Даний код не вірний'>
+								<!--                            <button type="button" class="form-modal__eye">-->
+								<!--                                <i class="ic ic-eye"></i>-->
+								<!--                            </button>-->
+							</label>
+							<div class="form-modal__hints-error form-modal__hints-error_code"></div>
+							<label class="custom-radio form-modal__label" for="agreement-check"><span class="text">Я даю згоду на обробку персональних данних</span>
+								<input type="checkbox" value="" data-error-text='Соглашение' name="agreement"
+									   data-value="newmail"
+									   id="agreement-check">
+								<span class="checkmark"></span>
+							</label>
+							<div class="form-modal__hints-error form-modal__hints-error_agreement"></div>
+							<button class="form-modal__send link link__code"><span class="text">Зареєструвати код </span>
+								<span class="arrow"><i class="ic ic-right-arrow"></i></span></button>
+						</form>
+
+					</div>
+				</div>
+
+				<!--            sucsess-->
+
+				<div class="modal__container sucsess"  role="dialog" aria-modal="true"
+					 aria-labelledby="modal-1-title">
+					<header class="modal__header">
+						<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+					</header>
+
+					<div class="modal__content modal__content_sucsess">
+						<div class="sucsess__title">Дякуємо!
+							Ваш код успішно зарєстровано
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
